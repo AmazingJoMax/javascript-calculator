@@ -5,26 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/resources/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./resources/icon.png">
 </head>
 <body>
-    <div id="header"><h1>Calculator</h1></div>
-    <hr>
     <section>
-            <input type="checkbox" class="toggle">
-            <div id="help-btn">?</div>
-            <div id="help-btn-close">+</div>
-            <div id="help-modal">
-                <div class="modal-info">
-                    <p>
-                        A handy web based calculator.
-                        Keypad or number pad can also be used
-                        to operate this calculator.
-                    </p>
-                </div>
+    
+        <div id="sidebar" class="close">
+            <div class="sidebar-head">
+                <!-- <img src="/resources/Junemontage (32).jpg" alt=""> -->
+                <h2>Vanilla Calc v3</h2>
             </div>
-            <div id="calculator">
+            <div class="info">
+                <p>
+                    This is a simple calculator built on vanilla 
+                    javascript with basic functions(+, /, *, -, %).
+                </p>
+                <p>Get more vanilla apps with source codes <a href="https://github.com/AmazingJoMax">here</a></p>
+            </div>
+        </div>
+
+        <input type="checkbox" id="checkbox" class="toggle" 
+        onclick="toggle()">
+
+        <div id="calculator">
+                <div id="header">
+                    <h1>Calculator</h1>
+                    <label for="checkbox" class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
+                </div>
                 <div id="display">
                     <div class="d1">0</div>
                     <div class="d2">0</div>
@@ -54,6 +66,7 @@
             
         </div>
     </section>
-    <script src="main.js"></script>
+    <script src="./engine.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
